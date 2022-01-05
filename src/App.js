@@ -6,7 +6,7 @@ import Catalog from './components/Catalog';
 import Movie from './components/Movie';
 import MovieDetail from './components/MovieDetail';
 import { BrowserRouter as Router, Route , Routes,Link } from 'react-router-dom'
-import './styles/Landing.css'
+import './styles/style.css'
 
 import './App.css';
 
@@ -55,6 +55,8 @@ updateRent=(movie)=>{
             <Route path="/"   element={<Landing users={this.state.users}/>}/>
             <Route path="/catalog"  element= {<Catalog updateRent={this.updateRent} movies={this.state.movies} />}/>
             {/* <Route path="/movies/:movieId"  render={({ match }) => <MovieDetail movies={state.movies} match={match} />} /> */}
+            {/* <Route path="/movies/:id" ({ match }) => {<MovieDetail movies={this.state.movies} match={match}  />}/>        */}
+
             </Routes>
             
         </div>

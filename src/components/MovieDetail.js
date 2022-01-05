@@ -5,10 +5,15 @@ class MovieDetail extends Component {
         super(props);
         this.state = {  }
     }
+
     render() { 
-        let id = this.props.match.params.id
-        let movie = this.props.movies.find((m)=> m.id=== id)
-        return ( <div>{console.log(movie.title)}</div> );
+        // const id = this.props
+     
+      
+       
+        return ( <div>
+            {/* {   console.log({id})} */}
+        </div> );
     }
 }
  
